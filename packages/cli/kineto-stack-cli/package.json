@@ -1,6 +1,6 @@
 {
   "name": "kineto-stack-cli",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "CLI tool to scaffold kineto-stack templates",
   "main": "dist/index.js",
   "bin": {
