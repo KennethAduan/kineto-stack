@@ -2,7 +2,7 @@
 
 A Turborepo monorepo for hosting and managing reusable project templates with an integrated CLI tool for easy scaffolding.
 
-## 🎯 Purpose
+## Purpose
 
 This repository serves as a centralized hub for all your project templates. It provides:
 
@@ -11,7 +11,7 @@ This repository serves as a centralized hub for all your project templates. It p
 - **Version Control**: Track template changes and improvements over time
 - **Build Optimization**: Turborepo caching for faster template builds
 
-## 📦 What's Inside?
+## What's Inside?
 
 This Turborepo includes:
 
@@ -49,7 +49,7 @@ The CLI automatically:
 - Installs dependencies
 - Sets up the project structure
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -114,7 +114,7 @@ You'll be prompted to:
 2. Choose a package manager (for Vite template)
 3. Wait for automatic setup to complete
 
-## 🛠️ Development
+## Development
 
 ### Available Scripts
 
@@ -190,7 +190,7 @@ kineto-stack/
 └── README.md                          # This file
 ```
 
-## 📝 Adding New Templates
+## Adding New Templates
 
 To add a new template:
 
@@ -224,7 +224,7 @@ To add a new template:
    bun run build
    ```
 
-## 🎨 Features
+## Features
 
 - **Monorepo Management**: All templates and tooling in one repository
 - **Fast Builds**: Turborepo caching for efficient builds
@@ -233,7 +233,7 @@ To add a new template:
 - **Git Subdirectory Support**: Templates cloned from specific subdirectories
 - **Package Manager Flexibility**: Support for Bun, npm, yarn, and pnpm
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! To contribute:
 
@@ -245,17 +245,17 @@ Contributions are welcome! To contribute:
 6. Push to the branch (`git push origin feature/amazing-template`)
 7. Open a Pull Request
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License.
 
-## 👤 Author
+## Author
 
 **Kenneth Aduan**
 
 - GitHub: [@KennethAduan](https://github.com/KennethAduan)
 
-## 🔗 Useful Links
+## Useful Links
 
 - [Turborepo Documentation](https://turborepo.org/docs)
 - [Next.js Documentation](https://nextjs.org/docs)
@@ -263,7 +263,7 @@ This project is licensed under the MIT License.
 - [Mantine Documentation](https://mantine.dev/)
 - [ShadCN UI](https://ui.shadcn.com/)
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - [Turborepo](https://turborepo.org/) for the amazing monorepo tooling
 - [Next.js](https://nextjs.org/) for the React framework
@@ -274,4 +274,4 @@ This project is licensed under the MIT License.
 
 ---
 
-**Happy Coding! 🚀**
+**Happy Coding!**
