@@ -2,15 +2,15 @@
 
 A powerful CLI tool to quickly scaffold KenStack templates for modern web development. Choose between Next.js with Mantine or Vite with ShadCN to kickstart your project instantly.
 
-## ✨ Features
+## Features
 
-- 🚀 **Interactive Template Selection** - Choose your preferred stack with ease
-- 📦 **Automatic Dependency Installation** - Let the CLI handle package management
-- 🎨 **Beautiful Terminal Output** - Colored logs and spinners for better UX
-- ⚡ **Multiple Package Managers** - Supports npm, yarn, pnpm, and bun
-- 🔧 **Full Project Setup** - Includes Git initialization and dependencies
+- **Interactive Template Selection** - Choose your preferred stack with ease
+- **Automatic Dependency Installation** - Let the CLI handle package management
+- **Beautiful Terminal Output** - Colored logs and spinners for better UX
+- **Multiple Package Managers** - Supports npm, yarn, pnpm, and bun
+- **Full Project Setup** - Includes Git initialization and dependencies
 
-## 📋 Available Templates
+## Available Templates
 
 ### 1. KenStack Bun Next.js Mantine
 
@@ -26,27 +26,27 @@ A powerful CLI tool to quickly scaffold KenStack templates for modern web develo
 - **Package Manager**: npm, yarn, pnpm, or bun (your choice)
 - **Source**: [kinetoStack](https://github.com/KennethAduan/kinetoStack) (Turbo Repo Template)
 
-## 🚀 Installation
+## Installation
 
 ### Option 1: Using npx (Recommended)
 
 ```bash
-npx kenstack-cli create my-app
+npx kinetoStack-cli create my-app
 ```
 
 ### Option 2: Global Installation
 
 ```bash
-npm install -g kenstack-cli
-kenstack create my-app
+npm install -g kinetoStack-cli
+kinetoStack create my-app
 ```
 
 ### Option 3: Local Development
 
 ```bash
 # Clone the repository
-git clone https://github.com/KennethAduan/kenStack-cli.git
-cd kenStack-cli
+git clone https://github.com/KennethAduan/kinetoStack.git
+cd kinetoStack/packages/cli/kinetoStack-cli
 
 # Install dependencies
 npm install
@@ -58,21 +58,21 @@ npm run build
 npm link
 
 # Use it
-kenstack create my-app
+kinetoStack create my-app
 ```
 
-## 💻 Usage
+## Usage
 
 ### Basic Usage
 
 ```bash
-kenstack create <project-name>
+kinetoStack create <project-name>
 ```
 
 Example:
 
 ```bash
-kenstack create my-awesome-app
+kinetoStack create my-awesome-app
 ```
 
 ### Interactive Flow
@@ -94,7 +94,7 @@ kenstack create my-awesome-app
    npm run dev
    ```
 
-## 📁 Project Structure
+## Project Structure
 
 After creating a project, you'll have:
 
@@ -108,7 +108,7 @@ my-awesome-app/
 └── ...
 ```
 
-## 🛠️ Development
+## Development
 
 ### Building the CLI
 
@@ -128,13 +128,13 @@ npm run dev create my-app
 npm run lint
 ```
 
-## 📝 Requirements
+## Requirements
 
 - **Node.js**: >= 18.0.0
 - **Git**: For cloning templates
 - **Package Manager**: npm, yarn, pnpm, or bun (depending on template)
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Feel free to:
 
@@ -144,17 +144,17 @@ Contributions are welcome! Feel free to:
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License.
 
-## 👤 Author
+## Author
 
 **Kenneth Aduan**
 
 - GitHub: [@KennethAduan](https://github.com/KennethAduan)
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - [Next.js](https://nextjs.org/)
 - [Vite](https://vitejs.dev/)
@@ -164,7 +164,7 @@ This project is licensed under the MIT License.
 - [Commander.js](https://github.com/tj/commander.js)
 - [Inquirer.js](https://github.com/SBoudrias/Inquirer.js)
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### "Directory already exists"
 
@@ -178,13 +178,13 @@ Install at least one package manager: npm, yarn, pnpm, or bun.
 
 Check your internet connection and ensure you have Git installed.
 
-## 📞 Support
+## Support
 
 For issues and questions:
 
-- Open an issue on [GitHub](https://github.com/KennethAduan/kenStack-cli/issues)
+- Open an issue on [GitHub](https://github.com/KennethAduan/kinetoStack/issues)
 - Check the template repositories for framework-specific help
 
 ---
 
-**Happy Coding! 🎉**
+**Happy Coding!**
