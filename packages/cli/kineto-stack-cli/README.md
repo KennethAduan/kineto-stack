@@ -1,6 +1,6 @@
 # kineto-stack-cli
 
-A powerful CLI tool to quickly scaffold KenStack templates for modern web development. Choose between Next.js with Mantine or Vite with ShadCN to kickstart your project instantly.
+A powerful CLI tool to quickly scaffold kineto-stack templates for modern web development. Choose between Next.js with Mantine or Vite with ShadCN to kickstart your project instantly.
 
 ## Features
 
@@ -12,14 +12,14 @@ A powerful CLI tool to quickly scaffold KenStack templates for modern web develo
 
 ## Available Templates
 
-### 1. KenStack Bun Next.js Mantine
+### 1. kineto-stack Bun Next.js Mantine
 
 - **Tech Stack**: Next.js 16, Bun, Mantine, TanStack Query, Jotai
 - **Best For**: Full-stack applications with beautiful UI components
 - **Package Manager**: Bun
 - **Source**: [kineto-stack](https://github.com/KennethAduan/kineto-stack) (Turbo Repo Template)
 
-### 2. KenStack Vite ShadCN
+### 2. kineto-stack Vite ShadCN
 
 - **Tech Stack**: Vite, React, ShadCN, Tailwind CSS
 - **Best For**: Fast, modern React applications with accessible components
@@ -78,7 +78,7 @@ kineto-stack create my-awesome-app
 ### Interactive Flow
 
 1. **Choose a Template**
-   - Select between KenStack Bun Next.js Mantine or KenStack Vite ShadCN
+   - Select between kineto-stack Bun Next.js Mantine or kineto-stack Vite ShadCN
 
 2. **Select Package Manager** (for Vite template)
    - Choose npm, yarn, pnpm, or bun
