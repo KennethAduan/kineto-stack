@@ -16,7 +16,12 @@ This guide explains how to publish new updates of `kineto-stack-cli` to npm.
    npm whoami
    ```
 
-2. **Build the Package**: Ensure the package is built before publishing
+2. **Two-Factor Authentication (2FA)**: npm requires 2FA to publish packages
+   - Enable 2FA on your npm account: https://www.npmjs.com/settings/[your-username]/security
+   - Or use a granular access token with "bypass 2fa" enabled
+   - See [Troubleshooting](#403-forbidden---two-factor-authentication-required) section for detailed instructions
+
+3. **Build the Package**: Ensure the package is built before publishing
    ```bash
    npm run build
    ```
@@ -206,11 +211,62 @@ npm publish --access public
 
 ## Troubleshooting
 
+### "403 Forbidden - Two-factor authentication required"
+
+**Error Message:**
+
+```
+npm error 403 403 Forbidden - PUT https://registry.npmjs.org/kineto-stack-cli - Two-factor authentication or granular access token with bypass 2fa enabled is required to publish packages.
+```
+
+**Solution:** npm requires Two-Factor Authentication (2FA) or a granular access token to publish packages. You have two options:
+
+#### Option 1: Enable 2FA on Your npm Account (Recommended)
+
+1. **Go to npm website**: https://www.npmjs.com/settings/[your-username]/security
+2. **Enable 2FA**:
+   - Click "Enable 2FA" or "Edit" next to Two-Factor Authentication
+   - Choose "Authorization" mode (recommended) or "Authorization and writes" mode
+   - Scan the QR code with an authenticator app (Google Authenticator, Authy, etc.)
+   - Enter the verification code to confirm
+3. **Login again** with 2FA:
+   ```bash
+   npm logout
+   npm login
+   ```
+   When prompted, enter your OTP (One-Time Password) from your authenticator app
+4. **Try publishing again**:
+   ```bash
+   npm publish
+   ```
+
+#### Option 2: Create a Granular Access Token (For CI/CD)
+
+1. **Go to npm tokens page**: https://www.npmjs.com/settings/[your-username]/tokens
+2. **Create a new token**:
+   - Click "Generate New Token"
+   - Select "Granular Access Token"
+   - Choose "Publish" permissions
+   - Enable "Bypass 2FA" option (if available)
+   - Copy the token (you won't see it again!)
+3. **Use the token**:
+
+   ```bash
+   # Set the token in your .npmrc file
+   echo "//registry.npmjs.org/:_authToken=YOUR_TOKEN_HERE" > .npmrc
+
+   # Or use it directly
+   npm publish --//registry.npmjs.org/:_authToken=YOUR_TOKEN_HERE
+   ```
+
+**Note:** Granular access tokens are ideal for CI/CD pipelines. For local development, enabling 2FA is recommended.
+
 ### "You do not have permission to publish"
 
 - Make sure you're logged in: `npm login`
 - Verify you own the package: `npm owner ls kineto-stack-cli`
 - If it's a new package, make sure the name is available
+- Check if 2FA is enabled (see above)
 
 ### "Package name already exists"
 
