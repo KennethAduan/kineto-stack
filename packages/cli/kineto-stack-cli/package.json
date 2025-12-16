@@ -16,7 +16,14 @@
     "dev": "tsx src/index.ts",
     "start": "node dist/index.js",
     "lint": "eslint src --ext .ts",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "version:patch": "npm version patch --no-git-tag-version",
+    "version:minor": "npm version minor --no-git-tag-version",
+    "version:major": "npm version major --no-git-tag-version",
+    "publish:patch": "npm run version:patch && npm publish",
+    "publish:minor": "npm run version:minor && npm publish",
+    "publish:major": "npm run version:major && npm publish",
+    "publish:dry-run": "npm run build && npm publish --dry-run"
   },
   "keywords": [
     "cli",
